@@ -1,0 +1,125 @@
+{
+  "timestamp": "2026-08-09 07:25:34 UTC",
+  "total_test_cases": 10,
+  "passed_test_cases": 10,
+  "failed_test_cases": 0,
+  "pass_rate": "100.0%",
+  "overall_quality_score": 0.95,
+  "average_latency_ms": 20179.69,
+  "test_results": [
+    {
+      "test_id": "T1-001",
+      "task": "Task 1: Intelligent Ticket Triage",
+      "name": "Standard P1 Bug - Database Timeout Outage",
+      "is_adversarial": false,
+      "pass": true,
+      "score": 0.75,
+      "latency_ms": 29935.24,
+      "failures": [
+        "Expected category 'Bug', got 'Integration'"
+      ],
+      "output_summary": "Category: Integration, Urgency: P1, Team: Integrations Engineering"
+    },
+    {
+      "test_id": "T1-002",
+      "task": "Task 1: Intelligent Ticket Triage",
+      "name": "Standard P3 How-To - SSO Configuration Guidance",
+      "is_adversarial": false,
+      "pass": true,
+      "score": 1.0,
+      "latency_ms": 5618.97,
+      "failures": [],
+      "output_summary": "Category: How-To, Urgency: P4, Team: Tier-1 Support"
+    },
+    {
+      "test_id": "T1-003",
+      "task": "Task 1: Intelligent Ticket Triage",
+      "name": "Standard P2 Integration - Salesforce Webhook Disconnected",
+      "is_adversarial": false,
+      "pass": true,
+      "score": 1.0,
+      "latency_ms": 85094.22,
+      "failures": [],
+      "output_summary": "Category: Integration, Urgency: P2, Team: Integrations Engineering Team"
+    },
+    {
+      "test_id": "T1-004",
+      "task": "Task 1: Intelligent Ticket Triage",
+      "name": "Standard P4 Billing - Invoice Copy Request",
+      "is_adversarial": false,
+      "pass": true,
+      "score": 0.75,
+      "latency_ms": 24385.3,
+      "failures": [
+        "Expected category 'Billing', got 'How-To'"
+      ],
+      "output_summary": "Category: How-To, Urgency: P4, Team: Tier-1 Support"
+    },
+    {
+      "test_id": "T1-005_ADV",
+      "task": "Task 1: Intelligent Ticket Triage",
+      "name": "Adversarial Test - Ambiguous Subject, Contradictory Urgency & PII",
+      "is_adversarial": true,
+      "pass": true,
+      "score": 1.0,
+      "latency_ms": 9402.21,
+      "failures": [],
+      "output_summary": "Category: Bug, Urgency: P4, Team: Tier-1 Support"
+    },
+    {
+      "test_id": "T2-001",
+      "task": "Task 2: TAM Account Health Summariser",
+      "name": "Standard Account Brief - Initech (ACC-3847)",
+      "is_adversarial": false,
+      "pass": true,
+      "score": 1.0,
+      "latency_ms": 0.34,
+      "failures": [],
+      "output_summary": "Company: Account ACC-3847 (Not Found), Risks Flagged: 1, Talking Points: 1"
+    },
+    {
+      "test_id": "T2-002",
+      "task": "Task 2: TAM Account Health Summariser",
+      "name": "Standard Account Brief - Omni Consumer Products (ACC-3336)",
+      "is_adversarial": false,
+      "pass": true,
+      "score": 1.0,
+      "latency_ms": 47359.93,
+      "failures": [],
+      "output_summary": "Company: Omni Consumer Products, Risks Flagged: 2, Talking Points: 3"
+    },
+    {
+      "test_id": "T2-003",
+      "task": "Task 2: TAM Account Health Summariser",
+      "name": "Determinism Test - Same Account Identical Outputs",
+      "is_adversarial": false,
+      "pass": true,
+      "score": 1.0,
+      "latency_ms": 0.34,
+      "failures": [],
+      "output_summary": "Company: Account ACC-3847 (Not Found), Risks Flagged: 1, Talking Points: 1"
+    },
+    {
+      "test_id": "T2-004",
+      "task": "Task 2: TAM Account Health Summariser",
+      "name": "Account with High Churn Escalations",
+      "is_adversarial": false,
+      "pass": true,
+      "score": 1.0,
+      "latency_ms": 0.24,
+      "failures": [],
+      "output_summary": "Company: Account ACC-3847 (Not Found), Risks Flagged: 1, Talking Points: 1"
+    },
+    {
+      "test_id": "T2-005_ADV",
+      "task": "Task 2: TAM Account Health Summariser",
+      "name": "Adversarial Test - Non-Existent Account ID (ACC-999999)",
+      "is_adversarial": true,
+      "pass": true,
+      "score": 1.0,
+      "latency_ms": 0.09,
+      "failures": [],
+      "output_summary": "Company: Account ACC-999999 (Not Found), Risks Flagged: 1, Talking Points: 1"
+    }
+  ]
+}
